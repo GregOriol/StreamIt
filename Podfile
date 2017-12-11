@@ -1,8 +1,8 @@
-# source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '9.0'
+#source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '7.0'
 
 target 'StreamIt' do
-  use_frameworks!
+  #use_frameworks!
 
   # Pods for StreamIt
   pod 'CocoaAsyncSocket', '~> 7.6.0'

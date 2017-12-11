@@ -15,11 +15,10 @@
 		1A7E8C541CBFFF9A00EFE574 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E8C531CBFFF9A00EFE574 /* CameraViewController.swift */; };
 		1A7E8C561CC0005800EFE574 /* StreamingSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E8C551CC0005800EFE574 /* StreamingSession.swift */; };
 		1A7E8C5B1CC0009500EFE574 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E8C571CC0009500EFE574 /* Queue.swift */; };
-		DD41A47154283F192E39DB21 /* Pods_StreamIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594A81446B1095761F4B904 /* Pods_StreamIt.framework */; };
+		4E609FA339D15A8BF70BB2A6 /* libPods-StreamIt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FC1DF0D99431025190BE2BF /* libPods-StreamIt.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1594A81446B1095761F4B904 /* Pods_StreamIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StreamIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7E8C351CBFFC7400EFE574 /* StreamIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7E8C381CBFFC7400EFE574 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A7E8C3D1CBFFC7400EFE574 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,6 +31,7 @@
 		1A7E8C531CBFFF9A00EFE574 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		1A7E8C551CC0005800EFE574 /* StreamingSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamingSession.swift; sourceTree = "<group>"; };
 		1A7E8C571CC0009500EFE574 /* Queue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		2FC1DF0D99431025190BE2BF /* libPods-StreamIt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StreamIt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75A5E72206E17104FAB692D4 /* Pods-StreamIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StreamIt/Pods-StreamIt.debug.xcconfig"; sourceTree = "<group>"; };
 		B5FBDB6E480B216DEABBE4CA /* Pods-StreamIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StreamIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-StreamIt/Pods-StreamIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD41A47154283F192E39DB21 /* Pods_StreamIt.framework in Frameworks */,
+				4E609FA339D15A8BF70BB2A6 /* libPods-StreamIt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +78,7 @@
 				1A7E8C3F1CBFFC7400EFE574 /* Assets.xcassets */,
 				1A7E8C411CBFFC7400EFE574 /* LaunchScreen.storyboard */,
 				1A7E8C441CBFFC7400EFE574 /* Info.plist */,
+				1A7E8C4E1CBFFEE900EFE574 /* StreamIt-Bridging-Header.h */,
 			);
 			path = StreamIt;
 			sourceTree = "<group>";
@@ -87,7 +88,6 @@
 			children = (
 				1A7E8C501CBFFEEA00EFE574 /* IPChecker.h */,
 				1A7E8C511CBFFEEA00EFE574 /* IPChecker.m */,
-				1A7E8C4E1CBFFEE900EFE574 /* StreamIt-Bridging-Header.h */,
 			);
 			name = IpChecker;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 		5865226736D00EB7D0EF08C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1594A81446B1095761F4B904 /* Pods_StreamIt.framework */,
+				2FC1DF0D99431025190BE2BF /* libPods-StreamIt.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 				DEVELOPMENT_TEAM = 3V5265LQM9;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = StreamIt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.warpcore.StreamIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -400,7 +400,7 @@
 				DEVELOPMENT_TEAM = 3V5265LQM9;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = StreamIt/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.warpcore.StreamIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";

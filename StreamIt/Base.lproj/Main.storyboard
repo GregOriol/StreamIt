@@ -105,6 +105,9 @@
                         <outlet property="cameraView" destination="ms9-sQ-rHT" id="kK1-XF-a68"/>
                         <outlet property="informationLabel" destination="YN9-54-Wjs" id="Mvm-RO-2Fy"/>
                         <outlet property="ledImage" destination="CyK-2Y-rYu" id="rWa-iS-f0K"/>
+                        <outlet property="minusLabel" destination="Jtg-vE-ftW" id="MeD-CI-v1t"/>
+                        <outlet property="plusLabel" destination="5fd-ZS-PfL" id="h4T-4L-OMm"/>
+                        <outlet property="zoomSlider" destination="Ddb-Xe-uvf" id="te3-HY-VNx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
